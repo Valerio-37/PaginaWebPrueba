@@ -70,7 +70,7 @@ with st.sidebar:
 @st.cache_resource
 def load_model():
     try:
-        with open('models/svm_model.pkl', 'rb') as f:
+        with open('svm_model.pkl', 'rb') as f:
             model = pickle.load(f)
         return model
     except FileNotFoundError:
