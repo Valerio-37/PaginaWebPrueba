@@ -19,13 +19,13 @@ page_style = """
 <style>
 /* Fondo general de la página */
 body {
-    background-color: #B9FBC0; /* Verde menta */
+    background-color: #fdddca; /* Verde menta */
     color: black; /* Letras negras */
 }
 
 /* Contenedor principal */
 [data-testid="stAppViewContainer"] {
-    background-color: #B9FBC0; /* Fondo verde menta */
+    background-color: #fdddca; /* Fondo verde menta */
     color: black; /* Letras negras */
 }
 
