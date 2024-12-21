@@ -21,17 +21,26 @@ page_style = """
 body {
     background-color: #fdddca; /* Verde menta */
     color: black; /* Letras negras */
+    font-family: 'Times New Roman', Times, serif; /* Fuente Times New Roman */
 }
 
 /* Contenedor principal */
 [data-testid="stAppViewContainer"] {
     background-color: #fdddca; /* Fondo verde menta */
     color: black; /* Letras negras */
+    font-family: 'Times New Roman', Times, serif; /* Fuente Times New Roman */
 }
 
 /* Estilo del texto en encabezados y párrafos */
 h1, h2, h3, h4, h5, h6, p {
     color: black; /* Letras negras */
+    font-family: 'Times New Roman', Times, serif; /* Fuente Times New Roman */
+}
+
+/* Estilo del título h1 y h2 */
+h1, h2 {
+    text-align: center; /* Centrar el título */
+    text-decoration: underline; /* Subrayar el título */
 }
 
 /* Estilo del botón "Evaluate" */
@@ -43,6 +52,7 @@ div[data-testid="stButton"] > button {
     border-radius: 10px; /* Bordes redondeados */
     font-size: 1rem; /* Tamaño de la fuente */
     font-weight: bold; /* Negrita */
+    font-family: 'Times New Roman', Times, serif; /* Fuente Times New Roman */
 }
 
 /* Cambiar el estilo al pasar el cursor */
@@ -89,7 +99,7 @@ if model is not None and not hasattr(model, "predict"):
 
 # Apartado de Información
 if selected == "Information":
-    st.header("La depresión")
+    st.header("LA DEPRESIÓN")
     st.subheader("¿Que es la depresión?")
     st.write(
         """
@@ -180,7 +190,7 @@ if selected == "Information":
 
 # Diagnóstico Manual
 if selected == "Diagnostic Measures":
-    st.header('Predict Depression Diagnosis')
+    st.header('PREDICT DEPRESSION DIAGNOSIS')
     st.subheader('User Input')
 
     # Obtener datos del usuario
@@ -258,7 +268,7 @@ if selected == "Diagnostic Measures":
 
 # Evaluar dataset
 if selected == "Evaluate Data":
-    st.header('Batch Evaluation')
+    st.header('BATCH EVALUATION')
     uploaded_file = st.file_uploader("Upload your dataset (CSV)", type=["csv"])
 
     if uploaded_file:
